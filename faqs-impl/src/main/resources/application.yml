@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: faqs-impl
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/afterwork_organiser
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+      properties:
+       hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+springdoc:
+  api-docs:
+    path: /docs
+  swagger-ui:
+    path: /api
